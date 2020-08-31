@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 
   s.frameworks='SystemConfiguration','CoreTelephony','QuartzCore','CoreText','CoreGraphics','UIKit','Foundation','CFNetwork','CoreMotion'
   s.vendored_frameworks = 'ios/Plugin/lib/AlipaySDK.framework'
-  s.header_dir = "ios/Plugin/lib/AlipaySDK.framework/Headers"
+  #s.header_dir = "ios/Plugin/lib/AlipaySDK.framework/Headers"
   s.libraries  = 'c++','z'
 
   #s.public_header_files         = 'os/Plugin/lib/AlipaySDK.framework/Headers/*.h'
