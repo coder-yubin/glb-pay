@@ -1,4 +1,4 @@
-import { WebPlugin } from '@capacitor/core';
+import { WebPlugin, Plugins, registerWebPlugin } from '@capacitor/core';
 import { PayPlugin } from './definitions';
 
 export class PayWeb extends WebPlugin implements PayPlugin {
@@ -17,7 +17,8 @@ export class PayWeb extends WebPlugin implements PayPlugin {
 
 const Pay = new PayWeb();
 
-export { Pay };
+//export { Pay };
 
-import { registerWebPlugin } from '@capacitor/core';
 registerWebPlugin(Pay);
+const MyPay = Plugins.Pay;
+export default MyPay;
