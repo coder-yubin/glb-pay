@@ -20,5 +20,5 @@ const Pay = new PayWeb();
 //export { Pay };
 
 registerWebPlugin(Pay);
-const MyPay = Plugins.Pay;
-export default MyPay;
+ 
+export default {MyPay:Plugins.Pay};
